@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "common_name":"Yellow Warbler",
+        "img_name": "yellow"
+    },
+    {
+        "id": 2,
+        "common_name": "Prothonotary Warbler",
+        "img_name": "prothonotary"
+    },
+    {
+        "id": 3,
+        "common_name": "Wilson's Warbler",
+        "img_name": "wilsons"
+    },
+    {
+        "id": 4,
+        "common_name": "Black-Throated Blue Warbler",
+        "img_name":"black-throated_blue"
+    },
+    {
+        "id": 5, 
+        "common_name": "Blackburnian Warbler",
+        "img_name": "blackburnian"
+    },
+    {
+        "id": 6,
+        "common_name": "Northern Parula",
+        "img_name": "northern_parula"
+    },
+    {
+        "id": 7,
+        "common_name": "Orange-crowned Warbler",
+        "img_name": "orange_crowned"
+    },
+    {
+        "id": 8,
+        "common_name": "Tennessee Warbler",
+        "img_name": "tennessee"
+    }
+]
