@@ -26,11 +26,32 @@
 }
 
 .main {
-    min-height: 50vh;
-    padding: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  min-height: 50vh;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.buttonFrame {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0 0;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  background: darkgoldenrod;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 10px;
+}
+
+.text {
+  font-size: 25px;
 }
