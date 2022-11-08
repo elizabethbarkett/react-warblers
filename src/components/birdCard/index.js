@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import styles from './birdCard.module.css'
 import { SelectionContext } from '../game';
-import { CorrectContext } from '../../../pages';
 
 export default class BirdCard extends Component {
     constructor(props) {

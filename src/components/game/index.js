@@ -1,11 +1,10 @@
 //GAME: 
 
 import React, { Component } from 'react'
-import BirdCard from '../birdCard';
 import styles from './game.module.css'
 import { CorrectContext } from '../../../pages';
 import ImageRow from '../imageRow';
-import Router from 'next/router';
+
 
 const jsonData = require('../../birds.json');
 const loadData = () => JSON.parse(JSON.stringify(jsonData))
@@ -20,6 +19,7 @@ export default class Game extends Component {
             chosenBird: {},
             userSelection: "",
             isCorrect: false,
+            userIncorrect: false,
             isMounted: false,
             page: 1
         }
@@ -89,9 +89,25 @@ export default class Game extends Component {
         if (this.state.isCorrect) {
             return "Correct!"
         } else if (this.state.userSelection=="" && !this.state.isCorrect){
-            return "Please choose below"
+            return "Please choose below:"
         } else {
             return "Please try again"
+        }
+    }
+
+    nextButtonIsDisabled = () => {
+        if (this.state.userSelection == "" || !this.state.isCorrect) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    userPoints = () => {
+        if (this.state.userIncorrect) {
+            return 0;
+        } else {
+            return 1;
         }
     }
 
@@ -102,21 +118,29 @@ export default class Game extends Component {
                 {(context) => (
                     <SelectionContext.Provider value={{
                         state: this.state,
-                        handleChange: (setValue, result) => {this.setState({
+                        handleChange: (setValue, result) => {
+                            this.setState({
                             userSelection: setValue,
                             isCorrect: result
-                        }); console.log(this.state.userSelection);
-                        context.handleChange()}}}>
+                        });
+                        if (!result){
+                            this.setState({
+                                userIncorrect: true
+                            })
+                        } else if (result && !this.state.userIncorrect) {
+                            context.handleChange()
+                        }
+                        }}}>
                         <div className={styles.container}>
                             <div className={styles.headerFrame}>
-                                <h1 className={styles.headerFont}>Select the {this.state.chosenBird["common_name"]}: </h1>
+                                <h1 className={styles.headerFont}>Select the {this.state.chosenBird["common_name"]}. </h1>
                             </div>
                             <div className={styles.subHeaderFrame}>
                                 <h2 className={styles.subHeaderFont}>{this.encouragingText()}</h2>
                             </div>
                             <ImageRow birdsArray={this.state.birdsArray} correctBird={this.state.chosenBird} isDisabled={this.isDisabled()}/>
                             <div className={styles.buttonFrame}>
-                                <button className={styles.button} onClick={() => Router.reload()}>
+                                <button className={styles.button} onClick={() => context.nextPage()} hidden={this.nextButtonIsDisabled()}>
                                     <span className={styles.text}>Next</span>
                                 </button>
                             </div>
