@@ -7,5 +7,3 @@ Inspired by the [Biggest Week in American Birding](https://www.biggestweekinamer
 Test your warbler identification skills and train for the migratory season!
 
 
-
-![img](public/warblers.gif)
