@@ -30,7 +30,7 @@ export default class BirdCard extends Component {
                     this.setState({isCorrect: (this.props.correctBird === this.props.birdImg), userHasSelected: true})}}>
                     <img
                     src={'/'+this.props.birdImg+'.jpeg'}
-                    style={{width: "250px", maxHeight: "300px"}}/>
+                    style={{width: "250px", maxHeight: "250px"}}/>
                 </button>
             )}
         </SelectionContext.Consumer>

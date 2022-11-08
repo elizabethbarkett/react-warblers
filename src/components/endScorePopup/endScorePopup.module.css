@@ -52,5 +52,12 @@
     width: 350px;
     height: 80px;
     border-radius: 20px;
-    outline: none;
+    background: dimgray;
+    box-shadow:rgba(0, 200, 17, 0.5);
+}
+
+.buttonText {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }

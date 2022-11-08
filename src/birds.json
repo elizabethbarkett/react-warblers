@@ -38,5 +38,135 @@
         "id": 8,
         "common_name": "Tennessee Warbler",
         "img_name": "tennessee"
+    },
+    {
+        "id": 9,
+        "common_name": "Bay-breasted Warbler",
+        "img_name": "bay-breasted"
+    },
+    {
+        "id": 10,
+        "common_name": "Black-and-white Warbler",
+        "img_name": "black-and-white"
+    },
+    {
+        "id": 11,
+        "common_name": "Black-throated Gray Warbler",
+        "img_name": "black-throated-gray"
+    },
+    {
+        "id": 12,
+        "common_name": "Black-throated Green Warbler",
+        "img_name": "black-throated-green"
+    },
+    {
+        "id": 13,
+        "common_name": "Blackpoll Warbler",
+        "img_name": "blackpoll"
+    },
+    {
+        "id": 14,
+        "common_name": "Blue-winged Warbler",
+        "img_name": "blue-winged"
+    },
+    {
+        "id": 15,
+        "common_name": "Canada Warbler",
+        "img_name": "canada"
+    },
+    {
+        "id": 16,
+        "common_name": "Cape May Warbler",
+        "img_name": "cape_may"
+    },
+    {
+        "id": 17,
+        "common_name": "Cerulean Warbler",
+        "img_name": "cerulean"
+    },
+    {
+        "id": 18,
+        "common_name": "Chestnut-sided Warbler",
+        "img_name": "chestnut-sided"
+    },
+    {
+        "id": 19,
+        "common_name": "Connecticut Warbler",
+        "img_name": "connecticut"
+    },
+    {
+        "id": 20,
+        "common_name": "Golden-winged Warbler",
+        "img_name": "golden-winged"
+    },
+    {
+        "id": 21,
+        "common_name": "Hooded Warbler",
+        "img_name": "hooded"
+    },
+    {
+        "id": 22,
+        "common_name": "Kentucky Warbler",
+        "img_name": "kentucky"
+    },
+    {
+        "id": 23,
+        "common_name": "Kirtland's Warbler",
+        "img_name": "kirtlands"
+    },
+    {
+        "id": 24,
+        "common_name": "Magnolia Warbler",
+        "img_name": "magnolia"
+    },
+    {
+        "id": 25,
+        "common_name": "Mourning Warbler",
+        "img_name": "mourning"
+    },
+    {
+        "id": 26,
+        "common_name": "Nashville Warbler",
+        "img_name": "nashville"
+    },
+    {
+        "id": 27,
+        "common_name": "Palm Warbler",
+        "img_name": "palm"
+    },
+    {
+        "id": 28,
+        "common_name": "Pine Warbler",
+        "img_name": "pine"
+    },
+    {
+        "id": 29,
+        "common_name": "Prarie Warbler",
+        "img_name": "prarie"
+    },
+    {
+        "id": 30,
+        "common_name": "Swainson's Warbler",
+        "img_name": "swainsons"
+    },
+    {
+        "id": 31,
+        "common_name": "Townsend's Warbler",
+        "img_name": "townsends"
+    },
+    {
+        "id": 32,
+        "common_name": "Worm-eating Warbler",
+        "img_name": "worm-eating"
+    },
+    {
+        "id": 33,
+        "common_name": "Yellow-rumped Warbler",
+        "img_name": "yellow-rumped"
+    },
+    {
+        "id": 34,
+        "common_name": "Yellow-throated Warbler",
+        "img_name": "yellow-throated"
     }
 ]

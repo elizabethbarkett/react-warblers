@@ -27,19 +27,19 @@ export default class EndScorePopup extends Component {
                         </div>
                         <div className={styles.playAgainFrame}>
                             <button className={styles.button} onClick={() => context.reset()}>
-                                <span>Play Again</span>
+                                <span className={styles.buttonText}>Play Again</span>
                             </button>
                         </div>
                         <div className={styles.playAgainFrame}>
                             <button className={styles.button}>
                                 <a href="https://www.biggestweekinamericanbirding.com/">
-                                <span>Want to test your skills in the field?</span>
+                                <span className={styles.buttonText}>Biggest Week in American Birding</span>
                                 </a>
                             </button>
                         </div>
                         <div className={styles.playAgainFrame}>
                             <button className={styles.button}>
-                                <span>About Me</span>
+                                <span className={styles.buttonText}>About Me</span>
                             </button>
                         </div>
                     </div>
