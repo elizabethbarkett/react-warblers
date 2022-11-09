@@ -31,15 +31,12 @@ export default class Game extends Component {
 
     setChosenBird = () => {
         let theChosenOne = this.getRandomBird();
-        console.log("Chosen: " + theChosenOne)
         this.setState({chosenBird: theChosenOne}, this.getRandomBirdArray(theChosenOne["img_name"]))
     }
 
     getRandomBird = () => {
         let bird = this.state.birds[Math.floor(Math.random() * this.state.birds.length)]
         let idx = this.state.birds.indexOf(bird)
-        console.log("INDEX: " + idx)
-        console.log(bird["img_name"])
         return bird;
     }
 
@@ -55,7 +52,6 @@ export default class Game extends Component {
                 birdArray.push(b["img_name"])
             }
         }
-        console.log(birdArray)
         let shuffledArray = this.shuffle(birdArray)
         this.setState({birdsArray: shuffledArray})
     }
@@ -112,7 +108,6 @@ export default class Game extends Component {
     }
 
     render() {
-        console.log(loadData())
         return (
             <CorrectContext.Consumer>
                 {(context) => (
