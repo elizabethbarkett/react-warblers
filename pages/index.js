@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Game from '../src/components/game'
 import ScoreBox from '../src/components/scoreBox'
@@ -28,10 +29,10 @@ export default class Home extends Component {
       <CorrectContext.Provider value={{
         state: this.state,
         handleChange: () => this.setState({
-            correct: this.state.correct+=1
+            correct: this.state.correct+1
         }),
         nextPage: () => this.setState({
-            page: this.state.page+=1
+            page: this.state.page+1
         }),
         reset: () => this.setState({
           page: 1,
@@ -41,7 +42,7 @@ export default class Home extends Component {
         <div>
             <EndScorePopup score={this.state.correct/(this.state.page-1)} isHidden={this.isPopupHidden()}/>
             <div className={styles.grid}>
-              <img src="/logo.png" width="150px" height="150px"/>
+              <Image src="/logo.png" width="150px" height="150px" alt=""/>
               <span className={styles.text}>Elizabeth Barkett</span>
               <ScoreBox score={this.state.correct}/>
             </div>
