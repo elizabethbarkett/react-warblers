@@ -41,7 +41,7 @@ export default class Home extends Component {
         <div>
             <EndScorePopup score={this.state.correct/(this.state.page-1)} isHidden={this.isPopupHidden()}/>
             <div className={styles.grid}>
-              <img src="/logo.png" width="150px" height="150px" alt=""/>
+              <img src="/logo.png" style={{width:"150px", height:"150px"}} alt=""/>
               <span className={styles.text}>Elizabeth Barkett</span>
               <ScoreBox score={this.state.correct}/>
             </div>
